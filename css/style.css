@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+  font-family: 'ralewayregular', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1056px;
+}
+header {
+  background: #000;
+  color: #fff;
+  line-height: 40px;
+}
+header h1 {
+  float: left;
+
+}
+header nav {
+  float: right;
+}
+header li {
+  display: inline-block;
+}
+header a {
+  color: #fff;
+}
+.menu > li {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  top: 40px; /*mozna tez dac 100% wzgledem rodzica*/
+  background: #000;
+  min-width: 160px;
+  padding: 10px;
+  display: none;
+}
+li:hover > .submenu {
+  display: block;
+}
+.submenu li {
+  display: block;
+}
+/*div {
+width: 0;
+height: 0;
+border-top: 10px solid red;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}*/
