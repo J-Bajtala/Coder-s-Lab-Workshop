@@ -14,6 +14,19 @@ body {
   margin: 0 auto;
   width: 1056px;
 }
+span {
+  color: #45c5a9;
+  font-weight: bolder;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+
 header {
   background: #000;
   color: #fff;
@@ -31,6 +44,8 @@ header li {
 }
 header a {
   color: #fff;
+
+  padding-left: 20px;
 }
 .menu > li {
   position: relative;
@@ -39,7 +54,7 @@ header a {
   position: absolute;
   top: 40px; /*mozna tez dac 100% wzgledem rodzica*/
   background: #000;
-  min-width: 160px;
+  min-width: 100px;
   padding: 10px;
   display: none;
 }
@@ -48,6 +63,87 @@ li:hover > .submenu {
 }
 .submenu li {
   display: block;
+}
+.upper {
+  height: 505px;
+  width: 100%;
+  background: linear-gradient(to bottom, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.head {
+  height: 505px;
+  width: 1056px;
+  border: 1px solid red;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+.black_chair {
+/*width: 600px;
+height: 400px;*/
+float: left;
+/*border: 1px solid red;*/
+margin-top: 50px;
+width: 50%;
+background-size: cover;
+}
+.head h1 {
+  text-align: center;
+  /*border: 1px solid red;*/
+  width: 50%;
+  float: right;
+  font-size: 40px;
+  margin-top: 120px;
+  font-weight:bolder;
+  padding-right: 10px;
+}
+.head p {
+  text-align: center;
+  padding-top: 200px;
+  /*border: 1px solid red;*/
+}
+.head button {
+  float: right;
+  height: 50px;
+  width: 270px;
+  margin-right: 130px;
+  background-color: #45c5a9;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 25px;
+
+
+}
+.white {
+  width: 100%;
+  height: 350px;
+  border: 1px solid red;
+  background-color: white;
+  box-sizing: border-box;
+}
+div[class*='picture'] {
+  height: 60%;
+  width: 20%;
+  border: 1px solid red;
+  float: left;
+  margin-left: 110px;
+  margin-top: 50px;
+  box-sizing: border-box;
+
+
+}  
+
+.main {
+  width: 100%;
+  height: 1000px;
+  background-color: #f1f1f1;
+  border: 1px solid red;
+}
+.footer {
+  width: 100%;
+  height: 800px;
+  border: 1px solid red;
 }
 /*div {
 width: 0;
